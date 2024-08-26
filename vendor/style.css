@@ -1,0 +1,591 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    position: relative;
+}
+.menu-bar{
+    height: 730px;
+    width: 40%;
+    background-color: antiquewhite;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    font-family: ub;
+}
+.close{
+    gap: 5px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.menu-bar :hover{
+    border-radius: 50px;
+    color: black;
+}
+.icon{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: black;
+}
+.num{
+    background-color: rgb(248, 210, 179);
+    border-radius: 50%;
+    padding: 3px 8px;
+}
+.cart-sym{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    display: flex;
+    gap: 25px;
+}
+.nav-bar{
+    height: 85px;
+    width: 100%;
+    background-color: rgba(250, 235, 215, 0.645);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+.nav-bar img{
+    height: 40px;
+    width: 40px;
+}
+.name{
+    font-family: ub;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar span{
+    font-size: 25px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.cart{
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    top: 30%;
+    right: 5%;
+    z-index: 100;
+}
+.nav-bar h5{
+    font-size: 25px;
+    font-weight: 750;
+    margin-bottom: 0;
+    font-style: italic;
+    padding-top: 20px;
+}
+.page1{
+    position: relative;
+}
+.main-caption{
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 55%;
+    color: white;
+    padding: 20px;
+}
+.main-caption h2{
+    color: antiquewhite;
+    font-size: 35px;
+    font-family: ub;
+    text-align: center;
+}
+.main-caption h3{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: ub;
+} 
+.mid-cap p{
+    font-size: 20px;
+    font-family: ub;
+    font-style: italic;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+}
+.mid-cap h2{
+    font-size: 30px;
+    font-family: ub;
+    text-align: center;
+    padding-top: 20px;
+}
+.stories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    color: grey;
+    padding-bottom: 10px;
+}
+.stories h2{
+    font-size: 25px;
+    font-style: italic;
+}
+.stories img{
+    height: 35px;
+    width: 35px;
+}
+.frames{
+    display: flex;
+    flex-wrap: wrap;
+}
+.l-frame{
+ width: 33.3%;
+}
+.l-frame img{
+    width: 100%;
+} 
+.d2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.l-frame p{
+    height: auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(251, 227, 192, 0.337);
+    position: absolute;
+    bottom: 10%;
+    font-weight: 700;
+    font-size: clamp(20px,50%,50px);
+    font-style: italic;
+    font-family: ub;
+    color: rgb(0, 0, 0);
+} 
+.bottom{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.founder{
+    height: 350px;
+    width: 80%;
+    display: flex;
+    gap: 40px;
+    padding: 20px 40px 20px 40px;
+    box-shadow: 5px 5px 5px 5px rgb(244, 232, 217);
+}
+
+.founder img{
+    height: 300px;
+    border-radius: 50px;
+}
+.writings{
+    padding-top: 20px;
+}
+.writings h2{
+    font-size: 25px;
+    font-weight: 750;
+    font-style: italic;
+}
+.writings h4{
+    font-size: 10;
+    font-weight: 100;
+    font-style: italic;
+    color: rgb(90, 85, 85);
+}
+.writings p{
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+    font-family: ub;
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+.connect p{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 17px;
+}
+.quotes img{
+    height: 70px;
+}
+.connect{
+    width: 100%;
+    padding: 20px 40px 20px 40px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.871);
+}
+.connect-logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.bottom-layer{
+    padding: 10px 100px 0px 100px;
+}
+.low-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.low-column h6{
+    display: flex;
+    justify-content: center;
+    color: rgba(70, 70, 70, 0.732);
+    padding-bottom: 10px;
+    font-family: ub;
+    font-weight: 700;
+}
+.low-column p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: ub;
+    color: rgba(46, 45, 45, 0.764);
+    text-align: center;
+}
+.local{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.low-r{
+    display: flex;
+    justify-content: space-evenly;
+}
+.c1 p{
+    color: rgba(0, 0, 0, 0.864);
+}
+.c1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-link{
+    color: grey;
+    text-decoration: none;
+}
+.b-link{
+    text-decoration: none;
+}
+
+@media(max-width:1346px){
+    .main-caption{
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        color: white;
+        border-radius: 50px;
+        background-color: rgba(96, 95, 95, 0.234);
+        padding: 0px;
+    }
+    .main-caption h2{
+        color: antiquewhite;
+        font-size: 35px;
+        font-family: ub;
+        text-align: center;
+    }
+    .main-caption h3{
+        text-align: center;
+        color: antiquewhite;
+        font-size: 20px;
+        font-family: ub;
+    } 
+    .l-frame p{
+        position: absolute;
+        bottom: 2%;
+        font-size: 18px;
+    } 
+    .bottom{
+        height: auto;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .founder{
+        height: auto;
+        width: 100%;
+    }
+}  
+@media(max-width:750px){
+    .menu-bar{
+        width: 100%;
+    }
+}
+@media(max-width:1000px){
+    .connect p{
+        font-style: italic;
+        font-weight: 500;
+        font-size: 13px;
+        padding: 10px;
+    }
+    .connect{
+        width: 100%;
+        padding: 5px 40px;
+    }
+    .connect-logos{
+        display: flex;
+        padding: 5px;
+        gap: 10px;
+    }
+}
+@media(max-width:900px){
+    .frames{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .l-frame{
+        width: 100%;
+    }
+    .l-frame p{
+        position: absolute;
+        bottom: 10%;
+    }
+}
+@media(max-width:840px){
+    .main-caption h3{
+        text-align: center;
+        color: antiquewhite;
+        font-size: 15px;
+        font-family: ub;
+    } 
+}
+@media(max-width:600px){
+    .main-caption h3{
+        text-align: center;
+        color: antiquewhite;
+        font-size: 10px;
+        font-family: ub;
+    } 
+}
+@media(max-width:600px){
+.main-caption h3{
+    display: none;
+    }
+}
+@media(max-width:700px){
+    .main-caption h2{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .nav-bar img{
+        height: 35px;
+        width: 35px;
+    }
+    .nav-bar{
+        padding: 10px;
+    }
+    .nav-bar span{
+        font-size: 15px;
+    }
+    .nav-bar h5{
+        font-size: 19px;
+        padding-top: 10px;
+    }
+    
+    .mid-cap h2{
+        font-size: 20px;
+    }
+    .mid-cap p{
+        font-size: 15px;
+        font-style: italic;
+    }
+    .stories h2{
+        font-size: 20px;
+    }
+}
+@media(max-width:650px){
+    .main-caption h2{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .bottom{
+        height: auto;
+        width: 100%;
+    }
+    .founder{
+        height: auto;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .writings h2{
+        font-size: 25px;
+        font-weight: 750;
+        font-style: italic;
+    }
+    .writings h4{
+        font-size: 10;
+        font-weight: 100;
+        font-style: italic;
+        color: rgb(90, 85, 85);
+    }
+    .writings p{
+        font-weight: 600;
+        font-size: 20px;
+        font-style: italic;
+        font-family: ub;
+        color: rgb(0, 0, 0);
+        padding-top: 10px;
+        margin-bottom: 0;
+    }
+    .connect{
+        padding: 5px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .connect p{
+        padding-bottom: 0px;
+    }
+}
+@media(max-width:450px){
+    .bottom{
+        height: auto;
+        width: 100%;
+    }
+    .founder{
+        height: auto;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .founder img{
+        width: auto;
+    }
+    .writtings{
+        padding-top: 0px;
+    }
+    .writings h2{
+        font-size: 20px;
+    }
+    .writings h4{
+        font-size: 15px;
+    }
+    .writings p{
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+.aboutus{
+    gap: 25px;
+    padding: 50px 100px;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    font-family: ub;
+    background-image: url('images/12.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.aboutus h3{
+    font-weight: 700;
+}
+
+.a-para{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.mid-para{
+    width: 100%;
+    background-image: url('./images/23.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.mid-content{
+    width: 50%;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 0px;
+    color: black;
+}
+.bottom-para{
+    padding: 40px 0px;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+    font-family: ub;
+}
+@media(max-width:1000px){
+    .aboutus{
+        padding: 50px;
+    }
+    .aboutus h3{
+        font-weight: 700;
+    }
+    .a-para{
+        width: 100%;
+    }
+    .mid-para{
+        width: 100%;
+        text-align: center;
+    }
+    .mid-content{
+        width: 100%;
+        padding: 30px;
+    }
+    .bottom-para{
+        padding: 40px 0px 0px;
+    }
+}

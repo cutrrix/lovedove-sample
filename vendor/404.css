@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+/* body{
+    background-color: antiquewhite;
+} */
+.d1{
+    position: relative;
+}
+.d1 h2{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 8em;
+}
+.d1 h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(80, 80, 80);
+    /* animation: animate 4s ease-in-out infinite; */
+}
+.d1 h2:nth-child(2){
+    color: black;
+    /* -webkit-text-stroke: 2px #03a9f4; */
+    animation: animate 4s ease-in-out infinite;
+}
+.d2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.d2 h1{
+    padding-top: 100px;
+}
+.d2{
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    max-width: 600px;
+    animation: focus-unfocus 10s infinite ease-in-out;
+}
+.button{
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+@keyframes animate{
+    0%,100%{
+        clip-path: polygon(0 52%, 17% 46%, 31% 50%, 
+        54% 61%, 67% 61%, 83% 56%, 99% 47%, 100% 99%, 1% 100%);
+    }
+    50%{
+        clip-path: polygon(0 63%, 19% 71%, 39% 73%,
+         56% 68%, 71% 54%, 84% 48%, 99% 47%, 100% 99%, 1% 100%);
+    }
+}
