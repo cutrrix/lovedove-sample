@@ -1,14 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+ 
+.name h5{
+    font-family: 'Open sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: italic;
+  padding: 0px !important; 
+  /* font-variation-settings:"wdth" 100; */
+}
 *{
     margin: 0%;
     padding: 0%;
+    cursor: default;
 }
 .main{
     position: relative;
 }
+body{
+    position: relative;
+    z-index: -100;
+}
+.whatsapp{
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    z-index: 100;
+}
+.whatsapp img{
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+
+}
 .menu-bar{
-    height: 730px;
-    width: 40%;
+    height: 500px;
+    width: 400PX;
     background-color: antiquewhite;
+    box-shadow: 0 4px 8px rgb(109, 107, 107);
     color: grey;
     display: flex;
     flex-direction: column;
@@ -17,38 +46,27 @@
     gap: 20px;
     display: none;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 85px;
+    right: 0px;
     z-index: 100;
     font-family: ub;
 }
-.close{
-    gap: 5px;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-}
-.menu-bar :hover{
+.menu-bar h4:hover{
     border-radius: 50px;
     color: black;
 }
 .icon{
     position: absolute;
-    top: 30%;
-    left: 5%;
+    top: 40px;
+    right: 40px;
     color: black;
+    /* cursor: url('../accets/icons8-cursor.svg'); */
+    /* cursor: default; */
 }
 .num{
-    background-color: rgb(248, 210, 179);
+    background-color: rgb(164, 106, 59);
     border-radius: 50%;
     padding: 3px 8px;
-}
-.cart-sym{
-    position: absolute;
-    top: 30%;
-    right: 5%;
-    display: flex;
-    gap: 25px;
 }
 .nav-bar{
     height: 85px;
@@ -65,6 +83,10 @@
     height: 40px;
     width: 40px;
 }
+.title-img img{
+    height: 50px;
+    width: auto;
+}
 .name{
     font-family: ub;
     display: flex;
@@ -77,28 +99,6 @@
     position: absolute;
     top: 5%;
     left: 5%;
-}
-.cart{
-    height: 30px;
-    width: 30px;
-    color: white;
-    background-color: black;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    font-size: 20px;
-    top: 30%;
-    right: 5%;
-    z-index: 100;
-}
-.nav-bar h5{
-    font-size: 25px;
-    font-weight: 750;
-    margin-bottom: 0;
-    font-style: italic;
-    padding-top: 20px;
 }
 .page1{
     position: relative;
@@ -114,25 +114,37 @@
 .main-caption h2{
     color: antiquewhite;
     font-size: 35px;
-    font-family: ub;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
     text-align: center;
+}
+.cherished{
+    font-family: "Cormorant Garamond", serif !important;
+    font-weight: 400 !important;
+    font-style: italic !important;
 }
 .main-caption h3{
     text-align: center;
     color: antiquewhite;
     font-size: 20px;
-    font-family: ub;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
 } 
 .mid-cap p{
     font-size: 20px;
-    font-family: ub;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
     font-style: italic;
     text-align: center;
     padding: 5px 10px 5px 10px;
 }
 .mid-cap h2{
     font-size: 30px;
-    font-family: ub;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
     text-align: center;
     padding-top: 20px;
 }
@@ -189,7 +201,7 @@
     background-color: rgba(251, 227, 192, 0.337);
     position: absolute;
     bottom: 10%;
-    font-weight: 700;
+    font-weight: 400;
     font-size: clamp(20px,50%,50px);
     font-style: italic;
     font-family: ub;
@@ -225,9 +237,10 @@
 }
 .writings h4{
     font-size: 10;
-    font-weight: 100;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
     font-style: italic;
-    color: rgb(90, 85, 85);
+    color: rgb(43, 41, 41) !important;
 }
 .writings p{
     font-weight: 600;
@@ -263,6 +276,7 @@
 }
 .bottom-layer{
     padding: 10px 100px 0px 100px;
+    background-color: black;
 }
 .low-column{
     display: flex;
@@ -273,7 +287,7 @@
 .low-column h6{
     display: flex;
     justify-content: center;
-    color: rgba(70, 70, 70, 0.732);
+    color: rgba(193, 192, 192, 0.732);
     padding-bottom: 10px;
     font-family: ub;
     font-weight: 700;
@@ -285,7 +299,7 @@
     align-items: center;
     font-size: 15px;
     font-family: ub;
-    color: rgba(46, 45, 45, 0.764);
+    color: rgba(193, 192, 192, 0.732) !important;
     text-align: center;
 }
 .local{ 
@@ -353,11 +367,6 @@
         width: 100%;
     }
 }  
-@media(max-width:750px){
-    .menu-bar{
-        width: 100%;
-    }
-}
 @media(max-width:1000px){
     .connect p{
         font-style: italic;
@@ -396,20 +405,42 @@
         font-family: ub;
     } 
 }
-@media(max-width:600px){
-    .main-caption h3{
-        text-align: center;
-        color: antiquewhite;
-        font-size: 10px;
-        font-family: ub;
-    } 
-}
-@media(max-width:600px){
-.main-caption h3{
-    display: none;
+@media(max-width:750px){
+    .low-column p{
+        padding: 0px;
+        margin: 0px !important;
+        /* font-size: 10px !important; */
     }
-}
-@media(max-width:700px){
+    .connect p{
+        /* font-size: 10px !important; */
+        margin: 0px;
+    }
+    .bottom-layer{
+        padding: 20px;
+    }
+    p{
+        font-size: 15px !important;
+    }
+    .stories{
+        padding: 0px !important;
+    }
+    h2{
+        font-size: 20px !important;
+    }
+    .menu-bar{
+        height: 250px;
+        width: 200PX;
+        gap: 5px;
+    }
+    .menu-bar h4{
+        font-size: 10px;
+    }
+    .menu-bar h6{
+        font-size: 8px;
+    }
+    .menu-bar img{
+        height: 20px;
+    }
     .main-caption h2{
         font-size: 2rem;
         width: 100%;
@@ -419,7 +450,7 @@
         width: 35px;
     }
     .nav-bar{
-        padding: 10px;
+        padding: 5px 10px 0px 10px !important;
     }
     .nav-bar span{
         font-size: 15px;
@@ -439,7 +470,29 @@
     .stories h2{
         font-size: 20px;
     }
+    .low-column p{ 
+        margin: 5px;
+        width: 100%;
+    }
+    .low-column h6{
+       padding: 0px;
+    }
 }
+
+@media(max-width:600px){
+    .main-caption h3{
+        text-align: center;
+        color: antiquewhite;
+        font-size: 10px;
+        font-family: ub;
+    } 
+}
+@media(max-width:600px){
+.main-caption h3{
+    display: none;
+    }
+}
+
 @media(max-width:650px){
     .main-caption h2{
         font-size: 1.5rem;
@@ -522,13 +575,12 @@
 
 .aboutus{
     gap: 25px;
-    padding: 50px 100px;
-    font-weight: 500;
+    padding: 50px 100px 0px 50px;
     font-size: 20px;
-    font-style: italic;
     color: black;
-    font-family: ub;
-    background-image: url('images/12.jpg');
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -543,7 +595,10 @@
 }
 .mid-para{
     width: 100%;
-    background-image: url('./images/23.jpg');
+    background-color: white;
+    border-radius: 10px; 
+    box-shadow: 5px 5px 5px 5px rgb(244, 232, 217);
+    /* background-image: url('/accets/images/'); */
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -562,10 +617,10 @@
 }
 .bottom-para{
     padding: 40px 0px;
-    font-weight: 600;
     font-size: 20px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
     font-style: italic;
-    font-family: ub;
 }
 @media(max-width:1000px){
     .aboutus{
@@ -584,6 +639,35 @@
     .mid-content{
         width: 100%;
         padding: 30px;
+    }
+    .bottom-para{
+        padding: 40px 0px 0px;
+    }
+}
+@media(max-width:750px){
+    p{
+        font-size: 15px;
+    }
+    .aboutus{
+        padding: 20px;
+    }
+    .aboutus h3{
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .a-para{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .mid-para{
+        width: 100%;
+        text-align: center;
+    }
+    .mid-content{
+        width: 100%;
+        padding: 10px;
     }
     .bottom-para{
         padding: 40px 0px 0px;

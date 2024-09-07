@@ -1,0 +1,121 @@
+body {
+    min-height: 300px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(249, 225, 206);
+    position: relative;
+}
+.ld-wedding img{
+    height: 300px;
+    position: absolute;
+    top: 8px;
+    left: -50px;
+}
+.c-menu{
+    position: absolute;
+    top: 45px;
+    right: 5%;
+}
+.m1{
+    background-color: rgb(249, 225, 206);
+}
+header {
+    background-image: url('photography-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.header-container h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: black;
+}
+
+.header-container p {
+    font-size: 1.2rem;
+    margin: 20px 0 0;
+    color: black;
+}
+
+/* Careers Section */
+.careers {
+    padding: 40px;
+    background-color: white;
+}
+
+.career-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.career-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.job {
+    background-color: rgb(251, 234, 221);
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.job h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.job p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.job button {
+    background-color: rgb(94, 93, 92);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+.job button h6{
+    color: white;
+}
+.job button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+@media(max-width:750px){
+    .careers {
+        padding: 10px 40px; 
+        background-color: white;
+    }
+    h2{
+        padding: 5px 0 10px; 
+        margin: 0px !important;
+    }
+}
